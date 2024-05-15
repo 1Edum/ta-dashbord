@@ -1,6 +1,8 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import Sidebar from "./_components/sidebar";
 
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -19,7 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={`p-2 w-screen h-screen flex flex-col md:flex-row ${roboto.className}`}>
+        <Sidebar />
+
+        {children}
+      </body>
     </html>
   );
 }

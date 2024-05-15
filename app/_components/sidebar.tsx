@@ -1,15 +1,20 @@
-import React from 'react'
-import Icons from './icons'
+import React from "react";
+import Icons from "./icons";
 
 const Sidebar = () => {
   return (
-    <header className='h-full w-1/4 bg-red-900 shadow-3xl'>
-      <div className='w-full h-16 bg-gray-50 shadow-2xl'></div>
-      <nav>
+    <header className="w-full md:w-1/6 shadow-3xl flex h-1/6 flex-col gap-y-2  md:h-full">
+      <div className="flex h-2/3 md:h-1/4 items-end rounded-lg bg-green-500 px-2">
+        <h1 className="text-3xl">Dashbord</h1>
+      </div>
+      <div className="flex h-1/2 w-full">
         <Icons />
-      </nav>
-    </header>
-  )
-}
+      </div>
+      <div className="md:h-full bg-zinc-200 rounded-lg">
 
-export default Sidebar
+      </div>
+    </header>
+  );
+};
+
+export default Sidebar;
