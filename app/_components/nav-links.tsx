@@ -1,21 +1,20 @@
 'use client'
 
 import React from "react";
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, DropletIcon, ThermometerSunIcon, InfoIcon } from "lucide-react";
 import Link from 'next/link';
 import clsx from "clsx";
 import { usePathname } from 'next/navigation';
 
 const linksIcons = [
   { name: "casa", icon: <HomeIcon size={30} />, href: "/" },
-  { name: "carro", icon: <HomeIcon size={30} />, href: "/test" },
-  { name: "computador", icon: <HomeIcon size={30} />, href: "/tes" },
-  { name: "coração", icon: <HomeIcon size={30} />, href: "/te" },
-  { name: "coração", icon: <HomeIcon size={30} />, href: "/tte" },
+  { name: "Umidade", icon: <DropletIcon size={30} />, href: "/umidade" },
+  { name: "Temperatura", icon: <ThermometerSunIcon size={30} />, href: "/temperatura" },
+  { name: "Sobre", icon: <InfoIcon size={30} />, href: "/sobre" },
 ];
 
 
-export default function NavLinks( { status = 'paid' }) {
+export default function NavLinks() {
   const pathname = usePathname();
   return (
     <div className='flex  md:flex-col w-full gap-2'>
@@ -24,9 +23,9 @@ export default function NavLinks( { status = 'paid' }) {
           <Link
           key={link.name}
           href={link.href}
-          className={clsx('rounded-lg  w-full flex md:p-2 gap-x-2 items-center bg-zinc-200 h-10 md:h-14',
+          className={clsx('rounded-lg  w-full flex md:p-2 gap-x-2 items-center bg-zinc-200 h-10 md:h-14 hover:bg-green-400 ',
           {
-            'text-green-500': pathname === link.href,
+            'text-green-500 hover:text-white': pathname === link.href,
           },
           
           )}
