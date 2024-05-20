@@ -21,10 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`p-2 w-screen h-screen flex flex-col md:flex-row ${roboto.className}`}>
+      <body className={`p-2 gap-x-4 w-screen h-screen flex flex-col md:flex-row ${roboto.className}`}>
         <Sidebar />
-
+        <div className="w-full h-full">
         {children}
+
+        </div>
       </body>
     </html>
   );
