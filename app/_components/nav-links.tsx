@@ -7,10 +7,10 @@ import clsx from "clsx";
 import { usePathname } from 'next/navigation';
 
 const linksIcons = [
-  { name: "casa", icon: <HomeIcon size={30} />, href: "/" },
-  { name: "Umidade", icon: <DropletIcon size={30} />, href: "/umidade" },
-  { name: "Temperatura", icon: <ThermometerSunIcon size={30} />, href: "/temperatura" },
-  { name: "Sobre", icon: <InfoIcon size={30} />, href: "/sobre" },
+  { name: "Home", icon: <HomeIcon size={30} />, href: "/" },
+  { name: "Moisture", icon: <DropletIcon size={30} />, href: "/umidade" },
+  { name: "Temperature", icon: <ThermometerSunIcon size={30} />, href: "/temperatura" },
+  { name: "About", icon: <InfoIcon size={30} />, href: "/sobre" },
 ];
 
 
