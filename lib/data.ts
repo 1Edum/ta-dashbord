@@ -14,7 +14,6 @@ export const chartDataUmidade = [
     { month: "June", desktop: 214 },
   ]
 
-
 export const chartDataTemperatura = [
   { month: "January", desktop: 35 },
   { month: "February", desktop: 30},
@@ -33,7 +32,7 @@ export const chartData = [
   { month: "June", desktop: 30 },
 ]
 
-export const invoices = [
+export const infosTable = [
   {
     person: "Daniel",
     date: "12/04/2020",
